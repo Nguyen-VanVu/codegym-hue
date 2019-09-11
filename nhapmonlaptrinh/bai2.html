@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clickAler()"> click</button>
+
+
+    <hr>
+    <div id='ten'></div>
+    <button type="button" onclick="showMessage1();">Click document</button>
+    <hr>
+    <div id='ten1'></div>
+    <hr>
+    <button type="button" onclick="showMessage3();">Click console</button>
+    <div id='ten3'></div>
+    <hr>
+    <div id='ten4'></div>
+    <button type="button" onclick="showMessage();">Click Me!</button>
+    <script>
+        function clickAler(){
+            alert('xinChao')
+        }
+
+        function showMessage(){
+            var a = 'nguyen van vu ';
+            document.getElementById('ten4').innerHTML=a;
+        }
+        function showMessage1(){
+            document.write('chaoXin')
+        }
+        function showMessage3(){
+            console.log('maytinh');
+        }
+
+    </script>
+</body>
+</html>
